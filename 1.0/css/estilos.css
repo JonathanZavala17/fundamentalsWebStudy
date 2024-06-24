@@ -1,7 +1,37 @@
-p{
-  color: red;
+/*Selector universal(a todo el sitio)*/
+/*
+* {
+  color: black;
+}
+*/
+
+/*Selector de tipo o etiqueta*/
+p {
+  color: blue;
 }
 
-a{
+a {
   color: green;
+}
+
+/*Selector de clase*/
+.listas {
+  color: chocolate; 
+  font-size: 25px;
+  font-family: "Playwrite MX", cursive;
+}
+
+/*agregando estilo a diferentes elementos*/
+a,
+ol,
+ul {
+  font-size: 35px;
+}
+
+/*Selector de ID*/
+#radioBoton,
+#checkboxBoton {
+  color: orange; 
+  font-size: 25px;
+  font-family: "Playwrite MX", cursive;
 }
