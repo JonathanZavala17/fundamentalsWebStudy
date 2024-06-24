@@ -9,8 +9,17 @@
 
     <p>Este es un formulario</p>
 
-    <form>
-      <input name="Texto">
+    <form action="/enviar-respuesta">
+      <input type="text" placeholder="ingrese una URL" required>
+      <button type="submit">Enviar</button><br>
+
+      <label for="Interior"><input id="Interior" type="radio" name="interior-exterior" checked>Interior</label>
+      <label for="Exterior"><input id="Exterior" type="radio" name="interior-exterior">Exterior</label><br>
+
+      <label for="Opcion1"><input id="Opcion1" type="checkbox" name="opciones" checked>Opcion 1</label>
+      <label for="Opcion2"><input id="Opcion2" type="checkbox" name="opciones">Opcion 2</label>
+      <label for="Opcion3"><input id="Opcion3" type="checkbox" name="opciones">Opcion 3</label><br>
+
     </form>
 
   </body>
