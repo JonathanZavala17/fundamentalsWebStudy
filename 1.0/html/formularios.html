@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!-- <style>
+      p{
+        color: red;
+      }
+      
+      a{
+        color: green;
+      }
+    </style> -->
   </head>
   <body>
     <a href="../index.html" rel="noopener noreferrer">Regresar al inicio</a><br>
@@ -9,18 +21,68 @@
 
     <p>Este es un formulario</p>
 
+    <!-- <form action="/enviar-respuesta" style="background-color: aqua;"> -->
     <form action="/enviar-respuesta">
+
+      <!-- INGRESO Y ENVIO-->
       <input type="text" placeholder="ingrese una URL" required>
       <button type="submit">Enviar</button><br>
 
-      <label for="Interior"><input id="Interior" type="radio" name="interior-exterior" checked>Interior</label>
-      <label for="Exterior"><input id="Exterior" type="radio" name="interior-exterior">Exterior</label><br>
+      <!-- BOTONES DE RADIO-->
+      <label for="Interior">
+        <input id="Interior" type="radio" name="interior-exterior" value="Interior" checked>Interior
+      </label>
+      <label for="Exterior">
+        <input id="Exterior" type="radio" name="interior-exterior" value="Exterior">Exterior
+      </label><br>
 
-      <label for="Opcion1"><input id="Opcion1" type="checkbox" name="opciones" checked>Opcion 1</label>
-      <label for="Opcion2"><input id="Opcion2" type="checkbox" name="opciones">Opcion 2</label>
-      <label for="Opcion3"><input id="Opcion3" type="checkbox" name="opciones">Opcion 3</label><br>
+      <!-- CASILLAS DE VERIFICACION-->
+      <label for="Opcion1">
+        <input id="Opcion1" type="checkbox" name="opciones" value="Opcion1" checked>Opcion 1
+      </label>
+      <label for="Opcion2">
+        <input id="Opcion2" type="checkbox" name="opciones" value="Opcion2">Opcion 2
+      </label>
+      <label for="Opcion3">
+        <input id="Opcion3" type="checkbox" name="opciones" value="Opcion3">Opcion 3
+      </label><br>
 
     </form>
+
+    <!-- <div style="background-color: gray;"> -->
+    <div>
+      <p><em>Esta es una lista ordenada</em></p>
+      <ol>
+        <li>
+          Navegacion
+        </li>
+        <li>
+          Parrafo 1
+        </li>
+        <li>
+          Parrafo 2
+        </li>
+        <li>
+          Parrafo 3
+        </li>
+        <li>
+          Parrafo 4
+        </li>
+      </ol>
+
+      <p><em>Esta es una lista desordenada</em></p>
+      <ul>
+        <li>
+          <s>Buscar otro html</s>
+        </li>
+        <li>
+          <s>Buscar otro html</s>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <small><p><em>DERECHO AUTHOR JONATHAN</em></p></small>
+    </footer>
 
   </body>
 </html>
