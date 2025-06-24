@@ -8,9 +8,26 @@
     <main>
       <h2>Este es un formulario</h2>
       <form action="/enviar-respuesta">
-        <label for="exterior"><input id="exterior" type="radio">Exterior</label>
-        <label for="interior"><input id="interior" type="radio">Interior</label>
+        <!--radio-->
+        <label for="exterior">
+          <input id="exterior" type="radio" name="interior-exterior" value="exterior">Exterior
+        </label>
+        <label for="interior">
+          <input id="interior" type="radio" name="interior-exterior" value="interior" checked>Interior
+        </label>
         <hr>
+        <!--checkbox-->
+        <label for="energico">
+          <input id="energico" type="checkbox" name="gaticos" value="energico">Energico
+        </label>
+        <label for="dormilon">
+          <input id="dormilon" type="checkbox" name="gaticos" value="dormilon" checked>Dormilon
+        </label>
+        <label for="querendon">
+          <input id="querendon" type="checkbox" name="gaticos" value="querendon">Querendon
+        </label>
+        <hr>
+        <!--input de texto-->
         <input type="text" placeholder="ingrese su nombre aca" required>
         <button type="submit">Enviar</button>
       </form>
