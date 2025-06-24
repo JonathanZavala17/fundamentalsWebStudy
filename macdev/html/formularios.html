@@ -7,8 +7,11 @@
   <body>
     <main>
       <h2>Este es un formulario</h2>
-      <form>
-        <input type="text">
+      <form action="/enviar-respuesta">
+        <label for="exterior"><input id="exterior" type="radio">Exterior</label>
+        <label for="interior"><input id="interior" type="radio">Interior</label>
+        <hr>
+        <input type="text" placeholder="ingrese su nombre aca" required>
         <button type="submit">Enviar</button>
       </form>
     </main>
