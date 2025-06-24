@@ -3,3 +3,28 @@
   height: 300px;
   object-fit: cover; 
 }
+
+/*Selector de etiqueta*/
+p{
+  color: aqua;
+}
+
+/*Selector de grupo*/
+h1, h2, h3{
+  color: blue;
+}
+
+/*Selector de id*/
+#parrafo-4{
+  color: blueviolet;
+}
+
+/*Selector de clase*/
+.select{
+  color: tomato;
+}
+
+/*Selector universal */
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
