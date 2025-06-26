@@ -5,26 +5,30 @@
 }
 
 /*Selector de etiqueta*/
-p{
+p {
   color: aqua;
+  font-size: 22px;
 }
 
 /*Selector de grupo*/
-h1, h2, h3{
+h1, 
+h2, 
+h3 {
   color: blue;
+  font-size: 27px;
 }
 
 /*Selector de id*/
-#parrafo-4{
+#parrafo-4 {
   color: blueviolet;
 }
 
 /*Selector de clase*/
-.select{
+.select {
   color: tomato;
 }
 
 /*Selector universal */
-*{
+* {
   font-family: 'Times New Roman', Times, serif;
 }
