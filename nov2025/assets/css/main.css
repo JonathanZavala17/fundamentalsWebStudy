@@ -1,0 +1,125 @@
+/* ==========================================================================
+   VARIABLES GLOBALES
+   ========================================================================== */
+
+   :root {
+    /* Colores principales */
+    --color-primary: #0055ff;
+    --color-secondary: #ff6f00;
+    --color-accent: #00c853;
+  
+    /* Colores neutrales */
+    --color-black: #000;
+    --color-dark: #333;
+    --color-gray: #888;
+    --color-light: #f0f0f0;
+    --color-white: #fff;
+  
+    /* Tipografía */
+    --font-family-main: 'Arial', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.75rem;
+  
+    /* Gestión de espacios */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+  
+    /* Bordes y radios */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-pill: 50px;
+  
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 3px 6px rgba(0,0,0,0.15);
+    --shadow-lg: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* ==========================================================================
+     RESETEO BÁSICO
+     ========================================================================== */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family-main);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding: var(--space-4);
+  }
+  
+  /* ==========================================================================
+     USO DE VARIABLES EN COMPONENTES
+     ========================================================================== */
+  
+  /* Títulos */
+  h1 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-4);
+  }
+  
+  h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-3);
+  }
+  
+  /* Texto */
+  p {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-3);
+  }
+  
+  /* Botón primario */
+  .btn-primary {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-2) var(--space-4);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: 0.2s;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: var(--shadow-md);
+    opacity: 0.9;
+  }
+  
+  /* Tarjeta */
+  .card {
+    background-color: var(--color-white);
+    padding: var(--space-4);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-4);
+  }
+  
+  /* Inputs */
+  input {
+    padding: var(--space-2);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-gray);
+    width: 100%;
+    margin-bottom: var(--space-3);
+  }
+  
+  /* Contenedor con espaciado */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--space-4);
+  }
+  
